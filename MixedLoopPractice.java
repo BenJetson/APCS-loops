@@ -51,8 +51,9 @@
     public static void oneToThirtyF()
     {
         for (int i = 1; i <= 30; i++) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
+        System.out.print("\n");
     }
     
     public static void oneToThirtyW()
@@ -60,25 +61,28 @@
         int i = 1;
         
         do {
-            System.out.println(i);
+            System.out.print(i + " ");
             i++;
          } while (i <= 30);
+        System.out.print("\n");
     }
         
     // keep making methods here
     
     public static void twentyToZeroF() {
         for (int i = 20; i >= 0; i -= 2) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
+        System.out.print("\n");
     }
     
     public static void twentyToZeroW() {
         int i = 20;
         do {
-            System.out.println(i);
+            System.out.print(i + " ");
             i -= 2;
         } while (i >= 0);
+        System.out.print("\n");
     }
     
     public static int sumN(int n) {
@@ -92,24 +96,33 @@
     
     public static void countMtoN(int m, int n) {
         for (m = m; m <= n; m++) {
-            System.out.println(m);
+            System.out.print(m + " ");
+        }
+        System.out.print("\n");
+    }
+    
+    public static void iLoveJava(int n) {
+        for (int i=0; i < n; i++) {
+            System.out.println("I love Java!");
         }
     }
     
     public static void divBy2and9() {
         for (int i = 1; i <= 100; i++) {
             if (i % 2 == 0 && i % 9 == 0) {
-                System.out.println(i);
+                System.out.print(i + " ");
             }
         }
+        System.out.print("\n");
     }
     
     public static void divBy3and8() {
         for (int i = 1; i <= 100; i++) {
             if (i % 3 == 0 && i % 8 == 0) {
-                System.out.println(i);
+                System.out.print(i + " ");
             }
         }
+        System.out.print("\n");
     }    
     
     public static int divBy5or7Sum() {
@@ -135,14 +148,29 @@
             } else if (div5) {
                 output = "Buzz";
             }
-            System.out.println(output);
+            System.out.print(output + " ");
         }
+        System.out.print("\n");
     }
     
     public static void main(String[] args)
     {
         oneToThirtyF();
         oneToThirtyW();
+        
+        twentyToZeroF();
+        twentyToZeroW();
+        
+        sumN(9);
+        
+        countMtoN(6, 13);
+        
+        iLoveJava(3);
+        
+        divBy2and9();
+        divBy3and8();
+        
+        divBy5or7Sum();
         
         bizzBuzz(25);
         // test your methods here
